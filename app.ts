@@ -63,7 +63,7 @@ function voidFunc(): void {
 let unusable: void = undefined;
 
 /**
- * undefined/null
+ * undefined/null ==== 所有类型的子类型
  */
 let u: undefined = undefined;
 let u1: undefined = null;
