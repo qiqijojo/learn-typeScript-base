@@ -1,4 +1,8 @@
 /**
+ * 基础类型
+ */
+
+/**
  * string类型
  */
 function greeter(person: string) {
@@ -31,9 +35,9 @@ let qrTupleVal: [number, [string, number]] = [4, ['9', 8]];
 /**
  * 枚举 ==== 可以由枚举的值得到它的名字
  */
-enum Color { Red = 3, Green = -1, Blue }
-let c: Color = Color.Green;
-let enumName: string = Color[2]
+enum Color { Red = 1, Green, Blue }
+let c: Color = Color.Green; // 2
+let enumName: string = Color[2] // 'Green'
 
 /**
  * any类型 ==== 不希望类型检查器对这些值进行检查
@@ -113,3 +117,4 @@ let aa: number = <string>typeVal.length; // 带不带括号的区别
 // （二：“as”语法）
 let asVal: any = 'bbbb';
 let asLength: number = (asVal as string).length;
+
